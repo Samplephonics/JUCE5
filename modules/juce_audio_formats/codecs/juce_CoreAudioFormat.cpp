@@ -494,11 +494,11 @@ public:
             if (status != noErr)
                 return false;
 
-            if ((int) numFramesToRead < numThisTime)
-            {
-                numThisTime = (int) numFramesToRead;
-                numBytes    = (size_t) numThisTime * sizeof (float);
-            }
+//            if ((int) numFramesToRead < numThisTime)
+//            {
+//                numThisTime = (int) numFramesToRead;
+//                numBytes    = (size_t) numThisTime * sizeof (float);
+//            }
 
             for (int i = numDestChannels; --i >= 0;)
             {
